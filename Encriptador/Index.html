@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+    <header class="header">
+        <section>
+            <img class="logo" src="img/Logo.png" alt="Logo Alura Latam">
+        </section>
+        <section>
+            <h1>Challenge N°1: Encriptador. </h1>
+        </section>
+
+
+    </header>
+
+    <main>
+        <section class="encriptador">
+            <textarea type="text" class="input-text" id="inputTexto" cols="40" rows="6"
+                placeholder="Ingrese el texto aquí"> </textarea>
+            <span class="icon-info"></span>
+            <p> Solo letras minúsculas y sin acentos. </p>
+            <div>
+                <button type="submit"  class="buttonClass"  onclick="btnEncriptar()">Encriptador</button>
+                <button type="submit"   class="buttonClass" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="desencriptador">
+            <div class="area-munieco">
+                <div class="contenedor-munieco">
+                    <img src="img/Muñeco.png" alt="" id="munieco">
+                </div>
+                <!--  <div class="contenedor-texto">
+                <h2 id="noencontrado"> Ningún mensaje fue encontrado</h2>
+            </div>
+            <div class="contenedor-parrafo">
+                <p> Ingresa el texto que desees encriptar o desencriptar. </p>
+            </div>-->
+            </div>
+            <div class="resultado">
+                <textarea type="text" id="texto2" readonly="true" class="input-text-area"></textarea>
+                <button type="submit"  class="buttonClass" onclick="copiar()" value="Copiar">Copiar</button>
+          
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>Programación - Programa ONE Alura Latam </p>
+        <p>&copy; Copyright 2022. Camilo Quiroga.</p>
+    </footer>
+
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
